@@ -4,12 +4,12 @@ import Carticon from "../Cart/CartIcon";
 
 const HeaderCartButton = (props) => {
   return (
-    <button className={styles.button}>
-      <spa className={styles.icon}>
+    <button className={styles.button} onClick={props.onClick}>
+      <span className={styles.icon}>
         <Carticon />
-      </spa>
-      <spa>Your Cart</spa>
-      <spa className={styles.badge}>3</spa>
+      </span>
+      <span>Your Cart</span>
+      <span className={styles.badge}>3</span>
     </button>
   );
 };
